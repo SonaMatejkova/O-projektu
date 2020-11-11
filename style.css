@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 650px;
+  background-color: #f7f2ef;
+}
+
+.hlavicka {
+  background-color: #FFBDB7;
+  height: 100px;
+}
+
+h1 {
+  font-family: 'EB Garamond', serif;
+  color: rgb(68, 66, 66);
+  text-shadow: grey;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+
+}
+
+.obrazek {
+  width: 50%;
+}
+
+.popisek {
+  margin: 15px 15px;
+  color: rgb(68, 66, 66);
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+}
+.tlacitko {
+background-color: #FFD831;
+align-items: center;
+margin: 30px;
+}
+
+.paticka {
+  background-color: #B5E0E2;
+  height: 100px;
+}
+
+
+
+
