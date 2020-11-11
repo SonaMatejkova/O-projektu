@@ -10,48 +10,71 @@ html {
 
 body {
   min-width: 650px;
-  background-color: #f7f2ef;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #ffbdb7, #b5e0e2);
+  margin: 0;
 }
 
 .hlavicka {
-  background-color: #FFBDB7;
-  height: 100px;
+  background-color: #ffbdb7;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.o-nas {
+  background-color: #ffbdb7;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+main {
+  margin: 80px 70px 0px 70px;
+  padding-bottom: 80px;
+  background-color: white;
 }
 
 h1 {
   font-family: 'EB Garamond', serif;
   color: rgb(68, 66, 66);
-  text-shadow: grey;
   text-align: center;
+  padding: 20px 0;
 }
 
 .container {
   display: flex;
   align-items: center;
-
 }
 
 .obrazek {
   width: 50%;
+  margin-left: 15px;
 }
 
 .popisek {
+  width: 50%;
   margin: 15px 15px;
   color: rgb(68, 66, 66);
   font-family: 'EB Garamond', serif;
   font-size: 18px;
 }
 .tlacitko {
-background-color: #FFD831;
-align-items: center;
-margin: 30px;
+  background-color: #ffd831;
+  align-items: center;
+  margin: 30px;
 }
 
 .paticka {
-  background-color: #B5E0E2;
-  height: 100px;
+  background-color: #b5e0e2;
+  height: 80px;
+  width: 100vw;
 }
-
-
-
-
