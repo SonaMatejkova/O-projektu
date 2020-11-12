@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px 0 30px;
+  padding: 0 30px 0 50px;
 }
 .logo {
   width: 4em;
@@ -41,31 +41,35 @@ body {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   border: 2px solid white;
   border-radius: 20px;
-  padding: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 15px;
 }
 
 main {
-  margin: 90px 160px 0px 160px;
-  padding-bottom: 10px;
+  margin: 90px 200px 0px 200px;
+  padding-bottom: 20px;
   background-color: white;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
   font-family: 'Jockey One', sans-serif;
   color: #334759;
+  text-shadow: 1px 1px 2px #7a7a7a;
   text-align: center;
-  font-size: 36px;
+  font-size: 48px;
   padding: 20px 0;
 }
 
 h2 {
   font-family: 'Jockey One', sans-serif;
   color: #334759;
+  text-shadow: 1px 1px 2px #7a7a7a;
   text-align: center;
   font-size: 30px;
 }
@@ -89,7 +93,6 @@ h2 {
 }
 
 .tlacitka {
-  margin: 20px;
   display: flex;
   justify-content: center;
 }
@@ -100,19 +103,25 @@ h2 {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   border-radius: 0 20px 20px 0;
-  border: 1px solid white;
   padding: 15px 80px;
 }
 .marta {
   border-radius: 20px 0 0 20px;
+  border-right: 2px solid white;
+  box-shadow: 2px 7px 8px -7px rgba(0, 0, 0, 0.5);
+}
+.sona {
+  box-shadow: 3px 7px 8px -7px rgba(0, 0, 0, 0.5);
 }
 
 .sona2,
 .marta2 {
   border-radius: 20px;
+  border: 0;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .paticka {
