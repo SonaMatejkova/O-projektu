@@ -9,14 +9,19 @@ html {
 }
 
 body {
-  min-width: 650px;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, #ffbdb7, #b5e0e2);
+  min-height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    hsla(50, 100%, 50%, 1) 0%,
+    hsla(260, 53%, 55%, 1) 77%,
+    hsla(208, 27%, 27%, 1) 100%
+  );
+  background-repeat: no-repeat;
   margin: 0;
+  font-family: 'Jura', sans-serif;
 }
 
 .hlavicka {
-  background-color: #ffbdb7;
   height: 80px;
   position: fixed;
   left: 0;
@@ -25,29 +30,44 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
 }
-
-.o-nas {
-  background-color: #ffbdb7;
+.logo {
+  width: 4em;
+  height: 4em;
+  filter: invert(100%);
+}
+.o-projektu {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
   border: 1px solid white;
-  padding: 20px;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 main {
-  margin: 80px 70px 0px 70px;
-  padding-bottom: 80px;
+  margin: 100px 160px 0px 160px;
+  padding-bottom: 10px;
   background-color: white;
+  border-radius: 20px;
 }
 
 h1 {
-  font-family: 'EB Garamond', serif;
-  color: rgb(68, 66, 66);
+  font-family: 'Jockey One', sans-serif;
+  color: #334759;
   text-align: center;
+  font-size: 36px;
   padding: 20px 0;
+}
+
+h2 {
+  font-family: 'Jockey One', sans-serif;
+  color: #334759;
+  text-align: center;
+  font-size: 30px;
 }
 
 .container {
@@ -58,23 +78,40 @@ h1 {
 .obrazek {
   width: 50%;
   margin-left: 15px;
+  border-radius: 20px;
 }
 
 .popisek {
   width: 50%;
   margin: 15px 15px;
   color: rgb(68, 66, 66);
-  font-family: 'EB Garamond', serif;
   font-size: 18px;
 }
-.tlacitko {
-  background-color: #ffd831;
+
+.tlacitka {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.marta,
+.sona {
+  background-color: #ffd500;
   align-items: center;
-  margin: 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 0 20px 20px 0;
+  padding: 15px 80px;
+}
+.marta {
+  border-radius: 20px 0 0 20px;
 }
 
 .paticka {
-  background-color: #b5e0e2;
   height: 80px;
   width: 100vw;
+  padding: 30px;
 }
