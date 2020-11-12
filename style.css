@@ -10,6 +10,7 @@ html {
 
 body {
   min-height: 100vh;
+  margin: 0;
   background-image: linear-gradient(
     180deg,
     hsla(50, 100%, 50%, 1) 0%,
@@ -17,12 +18,15 @@ body {
     hsla(208, 27%, 27%, 1) 100%
   );
   background-repeat: no-repeat;
-  margin: 0;
   font-family: 'Jura', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hlavicka {
-  height: 80px;
+  height: 50px;
   position: fixed;
   left: 0;
   right: 0;
@@ -30,28 +34,33 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px 0 50px;
+  padding: 0 10px 0 10px;
 }
 .logo {
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   filter: invert(100%);
 }
 .o-projektu {
   color: white;
+  background-color: #ffd500;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 14px;
   border: 2px solid white;
   border-radius: 20px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
-  padding: 15px;
+  padding: 5px;
 }
-
+.o-projektu:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 main {
-  margin: 90px 200px 0px 200px;
-  padding-bottom: 20px;
+  width: 320px;
+  height: 70%;
+  margin: 50px auto 0 auto;
+  padding: 0 15px 10px 15px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -62,8 +71,8 @@ h1 {
   color: #334759;
   text-shadow: 1px 1px 2px #7a7a7a;
   text-align: center;
-  font-size: 48px;
-  padding: 20px 0;
+  font-size: 30px;
+  margin: 10px 0;
 }
 
 h2 {
@@ -71,25 +80,20 @@ h2 {
   color: #334759;
   text-shadow: 1px 1px 2px #7a7a7a;
   text-align: center;
-  font-size: 30px;
-}
-
-.container {
-  display: flex;
-  align-items: center;
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 .obrazek {
-  width: 50%;
-  margin-left: 15px;
+  width: 100%;
   border-radius: 20px;
 }
 
 .popisek {
-  width: 50%;
-  margin: 15px 15px;
+  width: 100%;
   color: rgb(68, 66, 66);
-  font-size: 18px;
+  font-size: 14px;
+  margin: 10px 0;
 }
 
 .tlacitka {
@@ -103,10 +107,10 @@ h2 {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 14px;
   border-radius: 0 20px 20px 0;
-  padding: 15px 80px;
+  padding: 5px 30px;
 }
 .marta {
   border-radius: 20px 0 0 20px;
@@ -123,13 +127,80 @@ h2 {
   border: 0;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
-
+.marta:hover,
+.sona:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
 .paticka {
-  height: 80px;
+  height: 50px;
   width: 100vw;
-  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
   color: rgba(255, 255, 255, 0.5);
 }
 .paticka a {
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 540px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 4em;
+    height: 4em;
+  }
+  .o-projektu {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px;
+    background-color: 0;
+  }
+  h1 {
+    font-size: 48px;
+    margin: 20px 0 40px 0;
+  }
+  h2 {
+    font-size: 30px;
+    margin: 16px 0;
+  }
+  main {
+    width: 540px;
+    height: 100%;
+    margin-top: 80px;
+    padding: 10px 20px 20px 20px;
+  }
+  .obrazek {
+    width: 50%;
+    margin-left: 15px;
+    border-radius: 20px;
+  }
+  .popisek {
+    width: 50%;
+    margin: 15px 15px;
+    color: rgb(68, 66, 66);
+    font-size: 18px;
+  }
+  .hlavicka {
+    height: 80px;
+    padding: 0 30px 0 50px;
+  }
+  .marta,
+  .sona {
+    padding: 15px 80px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .paticka {
+    height: 80px;
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: 900px;
+  }
 }
