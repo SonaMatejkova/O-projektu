@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 15px 0 30px;
 }
 .logo {
   width: 4em;
@@ -41,15 +41,15 @@ body {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 18px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
   padding: 10px;
 }
 
 main {
-  margin: 100px 160px 0px 160px;
+  margin: 90px 160px 0px 160px;
   padding-bottom: 10px;
   background-color: white;
   border-radius: 20px;
@@ -100,18 +100,27 @@ h2 {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 18px;
-  border: 1px solid white;
   border-radius: 0 20px 20px 0;
+  border: 1px solid white;
   padding: 15px 80px;
 }
 .marta {
   border-radius: 20px 0 0 20px;
 }
 
+.sona2,
+.marta2 {
+  border-radius: 20px;
+}
+
 .paticka {
   height: 80px;
   width: 100vw;
   padding: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.paticka a {
+  color: rgba(255, 255, 255, 0.5);
 }
