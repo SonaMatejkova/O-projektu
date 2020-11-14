@@ -97,10 +97,17 @@ h2 {
   width: 100%;
   border-radius: 20px;
 }
-.obrazek-sona {
+
+.obrazek-sona
+.obrazek-marta {
   width: 60%;
   border-radius: 50%;
 }
+
+.div-obrazek {
+  filter: grayscale(100%);
+}
+
 .uvodni-slovo {
   width: 100%;
   display: flex;
