@@ -24,48 +24,47 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/*
 .hlavicka {
   height: 50px;
   left: 0;
   right: 0;
   top: 0;
   padding: 0 10px 0 10px;
-}
-
+}*/
 .o-projektu {
   color: white;
   background-color: #ffd500;
-  align-items: flex-end;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-family: 'Jura', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   border: 2px solid white;
   border-radius: 50%;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
-  padding: 5px;
+  padding: 30px 0px;
   position: absolute;
   top: -40px;
-  right: -30px;
+  right: 0;
   bottom: 80px;
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   z-index: 1;
 }
 
 .o-projektu:hover {
-  background-color: #ffd500;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 }
 
 main {
   position: relative;
-  max-width: 320px;
+  width: 320px;
   height: 70%;
-  margin: 50px auto 0 auto;
+  margin: 40px auto 0 auto;
   padding: 0 15px 10px 15px;
-  background-color:#dfe4e7;
+  background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -74,9 +73,9 @@ h1 {
   font-family: 'Jockey One', sans-serif;
   color: #334759;
   text-shadow: 1px 1px 2px #7a7a7a;
-  text-align: center;
   font-size: 30px;
   margin: 10px 0;
+  padding-left: 20px;
 }
 
 h2 {
@@ -88,14 +87,22 @@ h2 {
   margin: 10px 0;
 }
 
+.div-obrazek {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .obrazek {
   width: 100%;
   border-radius: 20px;
 }
-
+.obrazek-sona {
+  width: 70%;
+  border-radius: 50%;
+}
 .uvodni-slovo {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .popisek {
@@ -120,20 +127,21 @@ h2 {
   font-weight: 600;
   font-size: 14px;
   border-radius: 0 20px 20px 0;
-  padding: 5px 30px;
 }
 .marta {
   border-radius: 20px 0 0 20px;
   border-right: 2px solid white;
   box-shadow: 2px 7px 8px -7px rgba(0, 0, 0, 0.5);
+  padding: 5px 25px;
 }
 .sona {
+  padding: 5px 30px;
   box-shadow: 3px 7px 8px -7px rgba(0, 0, 0, 0.5);
 }
 
 .sona2,
 .marta2 {
-  border-radius: 50%;
+  border-radius: 20px;
   border: 0;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
@@ -144,7 +152,7 @@ h2 {
 }
 
 .paticka {
-  height: 50px;
+  height: 40px;
   width: 100vw;
   text-align: center;
   font-size: 10px;
@@ -155,70 +163,81 @@ h2 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.informace {
-  text-align: center;
-}
-
-
 .logo {
   position: absolute;
-  bottom: -17px;
-  left: -30px;
-  max-width: 70px;
-  max-height: 70px;
+  bottom: -10px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 2px solid white;
   background-color: hsla(208, 27%, 27%, 1);
 }
 
-/*
 @media screen and (min-width: 540px) {
   .container {
     display: flex;
     align-items: center;
   }
-  
-  }
   .o-projektu {
     font-weight: 700;
     font-size: 18px;
-    padding: 15px;
+    padding: 50px 0px;
+    position: absolute;
+    top: -60px;
+    right: -50px;
+    bottom: 80px;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
   }
   h1 {
     font-size: 48px;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 20px 0;
+    text-align: center;
   }
   h2 {
-    font-size: 18px;
+    font-size: 24px;
     margin: 16px 0;
   }
   main {
-    min-width: 540px;
+    width: 540px;
     height: 100%;
     margin-top: 80px;
     padding: 10px 20px 20px 20px;
   }
-  .obrazek {
+  .div-obrazek {
     width: 50%;
     margin-left: 15px;
-    border-radius: 20px;
+  }
+  .uvodni-slovo {
+    width: 50%;
   }
   .popisek {
-    width: 50%;
     margin: 15px 15px;
-    color: rgb(68, 66, 66);
-    font-size: 18px;
+    font-size: 16px;
   }
-  .hlavicka {
+  /*.hlavicka {
     height: 80px;
     padding: 0 30px 0 50px;
+  }*/
+  .marta {
+    padding: 15px 77px;
+    font-weight: 700;
+    font-size: 18px;
   }
-  .marta,
   .sona {
     padding: 15px 80px;
     font-weight: 700;
     font-size: 18px;
   }
+  .logo {
+    bottom: -30px;
+    left: -30px;
+    width: 70px;
+    height: 70px;
+  }
+
   .paticka {
     height: 80px;
     font-size: 14px;
@@ -229,4 +248,7 @@ h2 {
   main {
     width: 900px;
   }
-}*/
+  .popisek {
+    font-size: 18px;
+  }
+}
