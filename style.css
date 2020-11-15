@@ -99,9 +99,18 @@ h2 {
   border-radius: 20px;
 }
 
-.obrazek-sona
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 8px;
+  text-align: right;
+}
+
+.obrazek-sona,
 .obrazek-marta {
-  width: 60%;
+  width: 70%;
   border-radius: 50%;
 }
 
@@ -122,10 +131,12 @@ h2 {
   font-size: 14px;
   margin: 10px 0;
 }
+
 .github {
   width: 30px;
   height: 30px;
 }
+
 .tlacitka {
   display: flex;
   justify-content: center;
@@ -224,6 +235,9 @@ h2 {
   .div-obrazek {
     width: 50%;
     margin-left: 15px;
+  }
+  figcaption {
+    font-size: 10px;
   }
   .uvodni-slovo {
     width: 50%;
